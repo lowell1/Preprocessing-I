@@ -136,6 +136,7 @@ body {
 }
 html {
   font-size: 62.5%;
+  font-family: 'Barlow', sans-serif;
 }
 body {
   width: 60%;
@@ -144,7 +145,8 @@ body {
 body p,
 body li,
 body span,
-body nav {
+body nav,
+body footer {
   font-size: 1.5rem;
 }
 body h1 {
@@ -159,6 +161,7 @@ body h3 {
 #section1 {
   background-color: #e9ecef;
   padding: 0.5rem;
+  margin-bottom: 2rem;
 }
 #section1 a {
   text-decoration: none;
@@ -171,6 +174,64 @@ body h3 {
 #section1 * {
   margin: 2rem;
 }
+#section1 h3 {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 2rem;
+}
+#section2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+#section2 div {
+  width: 50%;
+}
+@media screen and (min-width: 481px) {
+  #section2 .div1 {
+    padding-right: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #section2 div {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+#section2 ul {
+  border: 1px solid lightgrey;
+}
+#section2 li {
+  padding: 1rem;
+}
+#section2 li:not(:last-child) {
+  border-bottom: 1px solid lightgrey;
+}
+#section2 > h2 {
+  margin-top: 2rem;
+}
+#section2 #work-history {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+#section2 #work-history div {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+}
+#section2 #work-history div:nth-of-type(even) {
+  background-color: #f2f2f2;
+}
+#section2 #work-history span:nth-of-type(1) {
+  width: 15%;
+}
+#section2 #work-history span:nth-of-type(2) {
+  width: 20%;
+}
+#section2 #work-history span:nth-of-type(3) {
+  width: 45%;
+}
+#section2 #work-history span:nth-of-type(4) {
+  width: 20%;
+}
 nav {
   display: flex;
   justify-content: flex-end;
@@ -180,4 +241,10 @@ nav a {
   margin-left: 4rem;
   text-decoration: none;
   color: black;
+}
+footer {
+  background-color: grey;
+  padding: 3rem 0;
+  text-align: center;
+  color: white;
 }

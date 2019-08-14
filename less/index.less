@@ -61,13 +61,14 @@ html, body {
 
 html {
 	font-size: 62.5%;
+	font-family: 'Barlow', sans-serif;
 }
 
 body {
 	width: 60%;
 	margin: 0 auto;
 
-	p, li, span, nav {
+	p, li, span, nav, footer {
 		font-size: 1.5rem;
 	}
 
@@ -101,6 +102,85 @@ body {
 	* {
 		margin: 2rem;
 	}
+
+	h3 {
+		border-bottom: 1px solid lightgrey;
+		padding-bottom: 2rem;
+	}
+
+	margin-bottom: 2rem;
+}
+
+// * { border: 1px solid black !important; }
+
+#section2 {
+	display: flex;
+	flex-wrap: wrap;
+
+	div {
+		width: 50%;
+	}
+
+
+	@media screen and(min-width: 481px) {
+		.div1 {
+			padding-right: 1rem;
+		}
+	}
+
+	@media screen and(max-width: 480px) {
+		div {
+			width: 100%;
+			margin-bottom: 1rem;
+		}
+	}
+
+	ul {
+		border: 1px solid lightgrey;
+	}
+
+	li {
+		padding: 1rem;
+	}
+
+	li:not(:last-child) {
+		border-bottom: 1px solid lightgrey;
+	}
+
+	> h2 {
+		margin-top: 2rem;
+	}
+
+	#work-history {
+		width: 100%;
+
+		margin-bottom: 2rem;
+
+		div {
+			width: 100%;
+			display: flex;
+			padding: 1rem;
+		}
+
+		div:nth-of-type(even) {
+			background-color: rgb(242, 242, 242);
+		}
+
+		span:nth-of-type(1) {
+			width: 15%;
+		}
+		
+		span:nth-of-type(2) {
+			width: 20%;	
+		}
+		
+		span:nth-of-type(3) {
+			width: 45%;
+		}
+		span:nth-of-type(4) {
+			width: 20%;
+		}
+	}
 }
 
 nav {
@@ -115,4 +195,11 @@ nav {
 		text-decoration: none;
 		color: black;
 	}
+}
+
+footer {
+	background-color: grey;
+	padding: 3rem 0;
+	text-align: center;
+	color: white;
 }
